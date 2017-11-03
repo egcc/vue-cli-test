@@ -4,8 +4,8 @@
     <p>this is a parent value:<span style="color:red;">这是普通字符串:{{propText}}</span></p>
     <p><span style="color:red;">这是动态prop:{{propTwo}}</span></p>
     <p>这是数值&prop作为初始值:{{initValue}} 计算属性：{{initValueAddFive}}</p>
-    <p>未传递prop时的类型：{{missType}}</p>
-    <hr style="color:red"/>
+    <p>prop时的类型：{{missType}}</p>
+    <hr/>
     <p>api data: {{dataList}}</p>
     <p><input type="button" value="getData" v-on:click="getApiData"></p>
   </div>
@@ -13,6 +13,7 @@
 
 <script>
 import axios from 'axios'
+
 export default {
   props: ['propText', 'propTwo', 'numProp'],
   data () {
@@ -36,3 +37,11 @@ export default {
   }
 }
 </script>
+
+<style>
+  hr{
+    border: none;
+    height: 1px;
+    background-color: red;
+  }
+</style>

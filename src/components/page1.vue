@@ -9,10 +9,11 @@
 
 <script>
 import child1 from './p1child'
+
 export default {
   data () {
     return {
-      name: 'page1 name!!',
+      name: 'page1 data bind value!!',
       propValue: 'propTwo value wakaka... this is a dynamic props value'
     }
   },
